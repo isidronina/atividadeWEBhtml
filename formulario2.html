@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario_2</title>
+</head>
+<body>
+4)
+<h1>Identificação do Usuário</h1>
+<form action="*" method="post">
+    <p><label for="inome">Nome:</label>
+    <input type="text" name="Nome" size="15" maxlength="30" id="inome" required="required" />
+    </p>
+    <p><label for="isenha">Senha:</label>
+        <input type="password" name="Senha" size="15" maxlength="30" id="isenha" required="required"/>
+    </p>
+    <p><label for="icpf">CPF:</label>
+        <input type="max" name="cpf" id="icpf" size="8" maxlength="11" required="required"/>
+    </p>
+    <p><label for="isexo">Sexo:</label>
+        <select id="isexo" name="devices" required="required">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+        </select>    
+    </p>
+    <p><label for="idata">Data de Nacimento:</label>
+        <input type="date" name="depart" id="idata" required="required"/>
+    </p>
+    <p>Estado Civil:
+        <label for="isolteiro"><input type="radio" name="genre" value="solteiro" id="isolteiro" required="required"/> Solteiro</label>
+        <label for="icasado"><input type="radio" name="genre" value="casado" id="icasado" required="required" /> Casado</label>
+        <label for="iseparado"><input type="radio" name="genre" value="separado" id="iseparado" required="required" /> Separado</label>
+        <label for="idivorciado"><input type="radio" name="genre" value="divorciado" id="idivorciado" required="required"/> Divorciado</label>
+        <label for="iviuvo"><input type="radio" name="genre" value="viuvo" id="iviuvo" required="required"/> Viúvo</label>
+    </p>
+    <p>Escolaridade:
+        <select name="escolar" required="required">
+            <option value="fundamental_incompleto">Ensino Fundamental Incompleto</option>
+            <option value="fundamental_completo">Ensino Fundamental Completo</option>
+            <option value="medio_incompleto">Ensino Médio Incompleto</option>
+            <option value="medio_completo">Ensino Médio Completo</option>
+            <option value="tecnico_completo">Ensino Técnico Completo</option>
+            <option value="superior_incompleto">Ensino Superior Incompleto</option>
+            <option value="superior_completo">Ensino Superior Completo</option>
+            <option value="pos">Pós-Graduação</option>
+        </select>    
+    </p>
+    
+    <p><label for="iocupacao">Ocupação Principal:</label>
+        <input type="text" name="ocupacao" id="iocupacao" maxlength="50px"  required="required"/>
+    </p>
+    
+    <p><label for="irenda">Renda Mensal:</label>
+        <input type="text" name="renda_mensal" id="irenda" size="16" maxlength="18" placeholder="R$0,00"  required="required"/>
+    </p>
+    
+    <p><label for="idependentes">Números de Dependentes:</label>
+        <input type="number" name="dependentes" id="idependentes" min="0" max="20" placeholder="0" required="required" />    
+    </p>
+    
+    <p><label for="itelefone">Telefone:</label>
+        <input type="tel" name="telefone" id="itelefone" maxlength="16" placeholder="(xx) xxxxx-xxxx" required="required"/>
+    </p>
+    
+    <p><label for="iemail">E-mail:</label>
+        <input type="email" name="email" id="iemail" maxlength="66" placeholder="exemplo@email.com" required="required" />
+    </p>
+    
+    <p><b>Localização</b></p>
+    
+    <p>Estado:
+        <select name="estado" id="iestado" required="required">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoa</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Destrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piaúi</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+    </p>
+    
+    <p><label for="icidade">Cidade:</label>
+        <input type="text" name="cidade" id="icidade" maxlength="60" required="required" />
+    </p>
+    
+    <p><b>Mensagem do Usuário</b></p>
+    
+    <p>Grau de Urgência:
+    
+    <label for="ibaixa"><input type="radio" name="grau" id="ibaixa" required="required"/>Baixa</label>
+    <label for="imedia"><input type="radio" name="grau" id="imedia" required="required" />Média</label>
+    <label for="ialta"><input type="radio" name="grau" id="ialta" required="required" />Alta</label>
+    </p>
+    
+    <p><label for="imensagem">Mensagem</label>
+        <textarea name="mensagem" id="imensagem" rows="5" cols="50" required="required"></textarea> 
+    </p>
+    
+    <p>Reportar Erro:
+    <input type="file" name="anexar" required="required"/>
+    </p>
+    
+    
+    <p>
+    <input type="submit" name="enviar" id="ienviar" value="Cadastrar" />
+    <input type="reset" name="excluir" id="iexcluir" value="Limpar" />
+    </p>
+    
+    
+</form>
+</body>
+</html>

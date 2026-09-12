@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .mes{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<p>A)</p>
+    <table border="1">
+        <tr>
+            <td rowspan="3">celula1</td>
+            <td>celula2</td>
+        </tr>
+        <tr>
+            <td>celula3</td>
+        </tr>
+        <tr>
+            <td>celula4</td>
+        </tr>
+    </table>
+<p>B)</p>
+    <table border="1">
+        <tr>
+            <td colspan="2">celula 1</td>
+            <td>celula 2</td>
+        </tr>
+        <tr>
+            <td >celula 3</td>
+            <td>celula 4</td>
+            <td>celula 5</td>
+        </tr>
+    </table>
+<p>C)</p>
+    <table border="1">
+        <tr>
+            <th>Peças</th>
+            <th>Preço</th>
+            <th rowspan="2">informática</th>
+        </tr>
+        <tr>
+            <td>HD</td>
+            <td>300,00</td>
+        </tr>
+    </table>
+<p>2)</p>
+    <table border="1">
+        <tr>
+            <td class="mes" colspan="7" >JANEIRO</td>
+        </tr>
+        <tr>
+            <th>D</th>
+            <th>S</th>
+            <th>T</th>
+            <th>Q</th>
+            <th>Q</th>
+            <th>S</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td class="red">3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td class="red">10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td class="red">17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td class="red">24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td class="red">31</td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+<p>3)</p>
+
+<p><strong>MANUTENÇÃO DE USUÁRIOS DO SISTEMAS INTERNO</strong></p>
+<form action="*" method="post" >
+    <p><b><label for="ilogin"> Login:</label></b>
+        <input type="text" name="Login" size="15" maxlength="30" id="ilogin" required="required" />
+    </p>
+    <p><b><label for="isenha">Senha:</label></b> 
+        <input type="password" name="Senha" size="15" maxlength="30" id="isenha" required="required"/>
+    </p>
+    
+    <p><b>Status:</b>
+        <select name="devices">
+            <option value="ativo">Ativo</option>
+            <option value="inativo">Inativo</option>
+            <option value="pendente">Pendente</option>
+        </select>
+    </p>
+    
+    <p><b>Tipo:</b>
+        <b><label for="itecnico"><input type="radio" name="genre" value="Tecnico" id="itecnico" /> Técnico</label></b>
+        <b><label for="iprofessor"><input type="radio" name="genre" value="Professor" id="iprofessor" /> Professor</label></b>
+        <b><label for="ialuno"><input type="radio" name="genre" value="Aluno" id="ialuno" /> Aluno</label></b>
+    </p>
+    
+    <p>
+      <b><label for="idata">Data de criação</label></b>
+      <input type="date" name="depart" id="idata" required="required"/>
+    </p>
+    
+    <p><b>Perfil</b>
+    <b><label for="iconvidado"><input type="radio" name="acesso" id="iconvidado" value="convidado"  />Convidado</label></b>
+    <b><label for="iadministrador"><input type="radio" name="acesso" id="iadministrador" value="administrador" />Administrador</label></b>
+    </p>
+    
+    <p><b><label for="iobservacao">Observações:</label></b>
+        <textarea name="Observações" rows="6" cols="30" id="iobservacao"></textarea>
+    </p>
+    
+    <p>
+    <b>Módulos</b>
+    <b><label for="icompra"><input type="checkbox" name="opcoes" id="icompra" value="compras" />Compra</label></b>
+    <b><label for="ibiblioteca"><input type="checkbox" name="opcoes2" id="ibiblioteca" value="biblioteca" />Biblioteca</label></b>
+    <b><label for="iacademico"><input type="checkbox" name="opcoes3" id="iacademico" value="academico" />Académico </label></b>
+    <br />
+    </p>
+    <p style="margin-left: 64px;">    
+    <b><label for="idocumentacao"><input type="checkbox" name="opcoes4" id="idocumentacao" value="documentação" />Documentação</label></b>
+    <b><label for="irh"><input type="checkbox" name="opcoes5" id="irh" value="RH" />Recursos Humanos</label></b>
+    </p>
+    
+    <p>
+    <input type="submit" name="enviar" id="ienviar" value="Cadastrar" />
+    <input type="reset" name="excluir" id="iexcluir" value="Limpar" />
+    </p>
+</form>
+
+
+
+
+<h1>Identificação de Usuário</h1>
+<form action="*" method="post">
+    <p><label for="inome">Nome:</label></p>
+    <input type="text" name="nome" size="15" maxlength="30" id="inome" required="required" />
+
+</form>   
+
+
+</body>
+</html>
